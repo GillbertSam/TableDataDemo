@@ -2,19 +2,24 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <div class="title">table--案例</div>
-    <router-view/>
+    <Example/>
+    <!-- <router-view/> -->
   </div>
 </template>
 
 <script>
+import Example from "./components/Example";
 export default {
-  name: 'App'
-}
+  name: "App",
+  components: {
+    Example
+  }
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
