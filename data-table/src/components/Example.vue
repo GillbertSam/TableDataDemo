@@ -163,7 +163,7 @@ export default {
       if (this.search != undefined) {
         for (let k in this.search) {
           this.users = this.users.filter((v, i) => {
-            return this.users[i][k] == this.search[k];
+            return this.users[i][k].indexOf(this.search[k]) !==-1;
           });
         }
       }
